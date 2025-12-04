@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Apeksha! 💕</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Caveat:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
+    <div class="container">
+        <!-- Envelope - Fullscreen with all flaps -->
+        <div class="envelope" id="envelope">
+            <div class="envelope-back"></div>
+            <div class="envelope-flap-top"></div>
+            <div class="envelope-flap-bottom"></div>
+            <div class="envelope-flap-left"></div>
+            <div class="envelope-flap-right"></div>
+            <div class="wax-seal" id="waxSeal">
+                <div class="seal-outer"></div>
+                <div class="seal-inner">
+                    <span>♥</span>
+                </div>
+            </div>
+            <p class="click-hint">Click the seal to open</p>
+        </div>
+
+        <!-- Letter Container - Fullscreen -->
+        <div class="letter-container" id="letterContainer">
+            <div class="wax-seal-top">
+                <div class="seal-outer"></div>
+                <div class="seal-inner">
+                    <span>♥</span>
+                </div>
+            </div>
+            
+            <!-- Page 1: Happy Birthday -->
+            <div class="letter-page active" id="page1">
+                <div class="page-content notebook-paper">
+                    <span class="corner-bow top-left">🎀</span>
+                    <span class="corner-bow top-right">🎀</span>
+                    <span class="corner-bow bottom-left">🎀</span>
+                    <span class="corner-bow bottom-right">🎀</span>
+                    <div class="date">27.09.2025</div>
+                    <h1 class="birthday-title">Happy Birthday</h1>
+                    <h2 class="birthday-name">Apeksha</h2>
+                    <p class="subtitle">Can't believe you're twenty four now!</p>
+                    <div class="decorations">
+                        <div class="decoration-item cake">🎂</div>
+                        <div class="decoration-item flowers">💐</div>
+                    </div>
+                    <div class="page-indicator" id="pageIndicator1"></div>
+                    <p class="page-click-hint">Click anywhere to continue →</p>
+                </div>
+            </div>
+
+            <!-- Page 2: Dear Message -->
+            <div class="letter-page" id="page2">
+                <div class="page-content notebook-paper">
+                    <span class="corner-bow top-left">🎀</span>
+                    <span class="corner-bow top-right">🎀</span>
+                    <span class="corner-bow bottom-left">🎀</span>
+                    <span class="corner-bow bottom-right">🎀</span>
+                    <div class="page2-content">
+                        <div class="photo-frame">
+                            <div class="photo-placeholder">
+                                <span>📷</span>
+                                <p>Photo</p>
+                            </div>
+                        </div>
+                        <h2 class="dear-title">Dear Muza</h2>
+                        <div class="letter-body">
+                            <p>Today is your special day, but honestly, every day with you already feels special. You have this incredible way of making every moment feel brighter, and I'm beyond grateful for the love, joy, and warmth you bring into my life.</p>
+                            <p>On your special day, I want you to know just how deeply you mean to me. Thank you for being my love, my joy, and my everything.</p>
+                            <p>I wish you all the happiness, success, and love in the world today and always. May this year bring you everything you've dreamed of and more!</p>
+                            <p>Here's to many more birthdays and beautiful moments we share. I love you more than you'll ever know! 💕</p>
+                        </div>
+                        <div class="doodles-page2">
+                            <span class="doodle-item">🎂</span>
+                            <span class="doodle-item">🎈</span>
+                        </div>
+                    </div>
+                    <div class="page-indicator" id="pageIndicator2"></div>
+                    <p class="page-click-hint">Click anywhere to continue →</p>
+                </div>
+            </div>
+
+            <!-- Page 3: Make a Wish -->
+            <div class="letter-page" id="page3">
+                <div class="page-content notebook-paper">
+                    <span class="corner-bow top-left">🎀</span>
+                    <span class="corner-bow top-right">🎀</span>
+                    <span class="corner-bow bottom-left">🎀</span>
+                    <span class="corner-bow bottom-right">🎀</span>
+                    <div class="date">27.09.2025</div>
+                    <h2 class="wish-title">Close your eyes and</h2>
+                    <h1 class="wish-main">Make a wish!</h1>
+                    <div class="candle-section">
+                        <p class="blow-text">blow out the candle!</p>
+                        <div class="cake-with-candle" id="cakeCandle">
+                            🍰
+                            <div class="flame" id="flame">🕯️</div>
+                        </div>
+                        <br>
+                        <button class="blow-btn" id="blowBtn">🌬️ Blow</button>
+                    </div>
+                    <div class="page3-doodles">
+                        <span class="balloons">🎈🎈🎈</span>
+                        <span class="gift-box">🎁</span>
+                    </div>
+                    <div class="page-indicator" id="pageIndicator3"></div>
+                    <p class="page-click-hint">Click anywhere to continue →</p>
+                </div>
+            </div>
+
+            <!-- Page 4: Party Invitation -->
+            <div class="letter-page" id="page4">
+                <div class="page-content notebook-paper">
+                    <span class="corner-bow top-left">🎀</span>
+                    <span class="corner-bow top-right">🎀</span>
+                    <span class="corner-bow bottom-left">🎀</span>
+                    <span class="corner-bow bottom-right">🎀</span>
+                    <p class="invite-intro">You're invited to the</p>
+                    <h1 class="invite-age">24th birthday</h1>
+                    <p class="invite-of">of</p>
+                    <h2 class="invite-name">Muza</h2>
+                    <div class="party-details">
+                        <p>SATURDAY, 27TH SEPTEMBER</p>
+                        <p>06:00 AM • SECRET SPOT PARK</p>
+                    </div>
+                    <div class="page4-doodles">
+                        <span class="doodle-item">💐</span>
+                        <span class="doodle-item">🎉</span>
+                        <span class="doodle-item">🧁</span>
+                    </div>
+                    <div class="page-indicator" id="pageIndicator4"></div>
+                    <p class="page-click-hint">Click anywhere to continue →</p>
+                </div>
+            </div>
+
+            <!-- Page 5: Be My Date -->
+            <div class="letter-page" id="page5">
+                <div class="page-content notebook-paper">
+                    <span class="corner-bow top-left">🎀</span>
+                    <span class="corner-bow top-right">🎀</span>
+                    <span class="corner-bow bottom-left">🎀</span>
+                    <span class="corner-bow bottom-right">🎀</span>
+                    <div class="date">27.09.2025</div>
+                    <span class="calendar-doodle">📅</span>
+                    <p class="date-question">Will you be my</p>
+                    <h1 class="date-title">Date?</h1>
+                    <p class="date-subtitle">For today's special</p>
+                    <div class="checkbox-section">
+                        <label class="checkbox-label" id="yesLabel">
+                            <input type="checkbox" id="yesCheck" class="fancy-checkbox">
+                            <span class="checkmark"></span>
+                            <span class="label-text">yes</span>
+                        </label>
+                        <label class="checkbox-label" id="noLabel">
+                            <input type="checkbox" id="noCheck" class="fancy-checkbox" disabled>
+                            <span class="checkmark"></span>
+                            <span class="label-text">no</span>
+                        </label>
+                    </div>
+                    <div class="page5-doodles">
+                        <span class="doodle-item">💐</span>
+                        <span class="doodle-item">🍾🥂</span>
+                    </div>
+                    <div class="page-indicator" id="pageIndicator5"></div>
+                    <p class="page-click-hint">Click anywhere to continue →</p>
+                </div>
+            </div>
+
+            <!-- Page 6: Dress Code -->
+            <div class="letter-page" id="page6">
+                <div class="page-content notebook-paper">
+                    <span class="corner-bow top-left">🎀</span>
+                    <span class="corner-bow top-right">🎀</span>
+                    <span class="corner-bow bottom-left">🎀</span>
+                    <span class="corner-bow bottom-right">🎀</span>
+                    <div class="date">27.09.2025</div>
+                    <p class="dress-intro">Don't forget the dress code is</p>
+                    <h1 class="dress-code">Blue</h1>
+                    <p class="see-you">See you!!!</p>
+                    <div class="outfit-icons">
+                        <span class="outfit dress">👗</span>
+                        <span class="outfit shirt">👔</span>
+                    </div>
+                    <div class="bow-decoration">🎀</div>
+                    <div class="page6-doodles">
+                        <span class="doodle-item">🎇</span>
+                        <span class="kiss-mark">💋</span>
+                        <span class="drinks">🥤🥤</span>
+                    </div>
+                    <div class="page-indicator" id="pageIndicator6"></div>
+                    <p class="page-click-hint final-hint">💕 Happy Birthday! 💕</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti container -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
