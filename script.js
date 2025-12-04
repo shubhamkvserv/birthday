@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const totalPages = pages.length;
     let isEnvelopeOpen = false;
     let candleBlown = false;
+    let isNavigating = false; // Prevent double navigation on mobile
     
     // Create page indicator dots
     function createPageIndicators() {
@@ -155,6 +156,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     function goToNextPage() {
+        // Prevent double navigation (fixes mobile touch + click issue)
+        if (isNavigating) return;
+        isNavigating = true;
+        
+        // Reset navigation lock after a short delay
+        setTimeout(() => {
+            isNavigating = false;
+        }, 300);
+        
         if (currentPage >= totalPages - 1) {
             // On last page, restart or do nothing
             currentPage = 0;
